@@ -4,6 +4,11 @@ sp:
 
 
 spring:
+  rabbitmq:
+    host: 192.168.52.133
+    port: 5672
+    username: admin
+    password: admin
   application:
     name: user-service
     
@@ -18,4 +23,4 @@ management:
   endpoints:
     web:
       exposure:
-        include: refresh
+        include: bus-refresh
